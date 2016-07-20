@@ -1,0 +1,226 @@
+html,body{
+	font-size:20px;
+	font-family: 'microsoft yahei'!important;	
+	height: 100%;
+}
+
+*{margin: 0;padding: 0;list-style: none;}
+
+/** 清除内外边距 **/
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre,
+form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 { font-size: 100%; }
+address, cite, dfn, em, var { font-style: normal; }
+code, kbd, pre, samp { font-family: courier new, courier, monospace; }
+small { font-size: 12px; }
+
+/** 重置列表元素 **/
+ul, ol { list-style: none; }
+
+/** 重置文本格式元素 **/
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+/** 重置表单元素 **/
+legend { color: #000; }
+fieldset, img { border: 0; }
+button, input, select, textarea { font-size: 100%; }
+
+/** 重置表格元素 **/
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* 清除浮动 */
+.ks-clear:after, .clear:after {
+  content: '\20';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.ks-clear, .clear {
+  *zoom: 1;
+}
+
+h1,h2,h3,h4,h5{
+	margin: 0;
+}
+ul{
+	list-style: none;
+}
+@media only screen and (min-width: 390px) and (max-width: 420px){ 
+	html{
+		font-size: 100%;
+	}
+}
+@media only screen and (min-width: 355px) and (max-width: 390px){ 
+	html{
+		font-size: 87.5%;
+	}
+}
+@media only screen and (min-width: 320px) and (max-width: 355px){ 
+	html{
+		font-size: 75%;
+	}
+}
+
+
+body{
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  background:none;
+  color: #232323;
+  overflow-x: hidden;
+  font-size: 0.8rem;
+}
+body:before {
+  content: ' ';
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url('') center 0 no-repeat;
+  background-size: cover;
+}
+a{
+	text-decoration: none!important;
+}
+
+.clear{
+	clear: both;
+}
+
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.textl{
+	text-align: left;
+}
+
+.textr{
+	text-align: right;
+}
+
+.mp0{
+	margin:0;
+	padding:0; 
+}
+
+.container{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.header .container,.nav .container,.midcontainer{
+  max-width: 1000px;
+  margin:0 auto;
+}
+
+.header{
+  padding: 0.5rem;
+}
+
+.nav{
+  background:#ff8400;
+  color: #fff;
+}
+
+.header .container ul{
+  text-align: right;
+}
+
+.nav .container ul{
+  text-align: left;
+}
+
+.header .container ul li,.nav .container ul li{
+  display: inline-block;
+  cursor: pointer;
+}
+
+.nav .container ul li{
+  padding: 0.5rem 1rem;
+}
+
+.nav .container ul li:hover,.nav .container ul li.active{
+  background: #e95a00;
+}
+
+.header .container ul li a{
+  font-size: 0.6rem;
+  color: #232323;
+  padding: 0 0.3rem;
+}
+
+.header .container ul li a:hover,.header .container ul li a.active{
+ color: #337ab7;
+}
+
+.nav .container ul li a{
+ color: #fff; 
+}
+
+.midcontainer{
+  padding: 0.5rem;
+}
+
+.midcontainer .group-box .group-tit{
+  border-bottom:1px  solid #337ab7;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.midcontainer .merchant-box .merchant-tit{
+  text-align: left;
+  padding: 0.5rem 0;
+}
+
+.midcontainer .group-box .group-item{
+  padding: 0.5rem;
+}
+
+.midcontainer .group-box .group-item img{
+  height: auto;
+  width: 100%;
+}
+
+.midcontainer .group-box .group-item p{
+  height: 2rem;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  position: relative;
+  top: -2rem;
+  line-height: 2rem;
+}
+
+.merchant-box{
+  border: 1px #ccc solid;
+  padding:0 0.5rem 0.5rem 0.5rem;
+}
+
+.merchant-box .merchant-item{
+  height: 3rem;
+  margin-bottom: 0.6rem;
+}
+
+.merchant-box .merchant-item img{
+  height: 3rem;
+  width: 100%;
+}
+
+.swiper-container .swiper-wrapper .swiper-slide img{
+  width: 100% !important;
+  height: 12rem !important;
+}

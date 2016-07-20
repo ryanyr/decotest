@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html class="no-js"  ng-app="jcProtoApp">
+<head>
+  <title ng-bind='pagetitle?pagetitle:"建材"'></title>
+  <meta name="keywords" content="建材"/>
+  <meta name="description" content="建材"/>
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta name="viewport" content="width=device-width">
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="format-detection"content="telephone=no"/>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/font/iconfont.css" />
+  <link rel="stylesheet" href="/stylesheets/swiper-3.3.1.min.css" />
+  <link rel="stylesheet" href="/stylesheets/css.css" />
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/javascripts/swiper-3.3.1.jquery.min.js"></script>
+  <script type="text/javascript">
+      var jcApp=angular.module('jcProtoApp', ['ui.router']);
+      jcApp.config(function ($stateProvider,$urlRouterProvider) {
+        $urlRouterProvider.otherwise('/home');
+      });   
+  </script>
+  <script src="/javascripts/jcApp.js"></script>
+</head>
+<body>
+  <div class="appdiv" ui-view=""></div>
+</body>
+</html>
